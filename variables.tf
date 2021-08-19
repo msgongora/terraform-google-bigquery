@@ -119,8 +119,9 @@ variable "tables" {
         interval = string,
       }),
     }),
-    expiration_time = string,
-    labels          = map(string),
+    expiration_time     = string,
+    labels              = map(string),
+    deletion_protection = optional(bool),
   }))
 }
 
